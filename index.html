@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>My Portfolio</title>
+   
+
+<body class="dark-mode">
+
+   <header>
+      <h1>Kiruthika E</h1>
+      <p>Frontend Developer | Aspiring Web Developer | Javascript Learner</p>
+      <img src="kiruthika.jpeg" class="photo">
+    </header>
+                      
+   <nav>
+   <a href="index.html" class="kiru">Home</a>
+   <a href="about.html" class="kiru">About</a>
+   <a href="education.html" class="kiru">Education</a>
+   <a href="project.html" class="kiru">Projects</a>
+   <a href="skill.html" class="kiru">Skills</a>
+   <a href="contact.html" class="kiru">Contact</a>
+   </nav>
+   <button id="go" onclick="toggleMode()">🌙 Dark Mode</button>
+   <section class="skill-box">
+      
+         <span>HTML</span>
+      
+      
+         <span>CSS</span>
+      
+         <span>JavaScript</span>
+      
+         <span>Python</span>
+         <h3>Passionate about creating responsive and
+interactive web applications.
+</h3>
+      
+   </section>
+    <footer>
+   <p>© 2026 Kiruthika Portfolio</p>
+   </footer> 
+   <script>
+      function toggleMode() {
+         document.body.classList.toggle("dark-mode");
+         var change=document.getElementById("go");
+         if(document.body.classList.contains("dark-mode")){
+            change.textContent="☀️ Light Mode";
+         }
+         else{
+            change.textContent="🌙 Dark Mode";
+         }
+      }
+      </script>
+
+</body>
+</html>
+<style>
+   body{
+   font-family:Arial;
+   margin:0;
+   padding:0;
+   background-color: white;
+}
+
+header{
+   background-color: blue;
+   color:white;
+   text-align:center;
+   padding:40px;
+}
+
+section{
+   padding:30px 60px;
+}
+.skill-box span{
+   background-color: blue;
+    color: white;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.skill-box:hover{
+   background:black;
+   transform:scale(1.1);
+   transform:translateY(-5px);
+}
+h3{
+   color:blue;
+   padding-bottom:10px;
+   margin-top:30px;
+
+}
+.dark-mode{
+    background-color:black;
+    color:white;
+}
+
+.dark-mode header{
+    background-color:#222;
+}
+
+.dark-mode footer{
+    background-color:#222;
+}
+.dark-mode nav{
+    background-color: #111;
+}
+
+.dark-mode .kiru{
+    background-color: #444;
+    color: white;
+}
+
+.dark-mode .skill-box span{
+    background-color: #555;
+    color: white;
+}
+
+.dark-mode h3{
+    color: white;
+}
+  
+
+
+
+
+nav{
+    background-color:white;
+    padding:10px;
+    text-align:right;
+    color:blue;
+}
+.kiru{
+   margin:10px;
+   padding:5px 15px;
+   text-decoration:none;
+   font-size:20px;
+   color:white;
+   font-weight:bold;
+   transition: 0.3s;
+   background-color: blue;
+   border-radius: 10px;
+   
+}
+.kiru:hover{
+   color: brown;
+   transform:scale(1.05);
+   transform:translateY(-5px);
+}
+.photo{
+   width:140px;
+   height:180px;
+   object-fit:cover;
+
+   position:absolute;
+   top:10px;
+   right:10px;
+
+   border-radius:15px;
+}
+
+@media(max-width:600px){
+
+   header{
+      padding:20px;
+   }
+
+}
+footer{
+   background:blue;
+   color:white;
+   text-align:center;
+   padding:20px;
+}
+
+</style>
+   
+
+  
+
+   
+
+   
+   
+
+   
+
+
+   
