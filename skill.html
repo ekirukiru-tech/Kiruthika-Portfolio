@@ -1,0 +1,131 @@
+<nav>
+   <a href="home.html" class="kiru">Home</a>
+   <a href="about.html" class="kiru">About</a>
+   <a href="education.html" class="kiru">Education</a>
+   <a href="project.html" class="kiru">Projects</a>
+   <a href="skill.html" class="kiru">Skills</a>
+   <a href="contact.html" class="kiru">Contact</a>
+</nav>
+<h1 class="card">Skills</h1>
+<div class="card">
+
+
+    <div class="card">
+        <h3>HTML</h3>
+        <p>Proficient in creating structured web pages using HTML5, including semantic elements and multimedia integration.</p>
+    </div>
+    <div class="progress">
+        <div class="html">90%</div>
+    </div>
+    <div class="card">
+        <h3>CSS</h3>
+        <p>Skilled in styling web pages with CSS3, including responsive design, Flexbox, and Grid layouts.</p>
+    </div>
+    <div class="progress">
+        <div class="css">80%</div>
+    </div>
+    
+    <div class="card">
+        <h3>JavaScript</h3>
+        <p>Experienced in adding interactivity to web pages using JavaScript, including DOM manipulation and event handling.</p>
+    </div>
+    <div class="progress">
+        <div class="js">70%</div>
+    </div>
+    <div class="card">
+        <h3>Python</h3>
+        <p>Familiar with Python programming for general-purpose coding and basic scripting tasks.</p>
+    </div>
+    <div class="progress">
+        <div class="python">70%</div>
+    </div>
+</div>
+
+<style>
+    h1{
+        text-align: center;
+        color: red;
+    }
+    .card h1{
+        background-color: lightblue;
+        height:50px;
+    }
+    .progress{
+    width: 300px;
+    background-color: lightgray;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.progress div{
+    color: white;
+    padding: 8px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.html{
+    width: 90%;
+    background-color: blue;
+}
+
+.css{
+    width: 80%;
+    background-color: green;
+}
+
+.js{
+    width: 70%;
+    background-color: orange;
+}
+
+.python{
+    width: 70%;
+    background-color: purple;
+}
+.progress div{
+    animation: load 2s;
+}
+
+@keyframes load{
+    from{
+        width: 0;
+    }
+}
+.kiru{
+         margin:10px;
+         padding:5px 15px;
+         text-decoration:none;
+         font-size:20px;
+         color:white;
+         font-weight:bold;
+         transition: 0.3s;
+         background-color:red;
+         border-radius: 10px;
+}
+.kiru:hover{
+         color: brown;
+         transform: scale(1.1) translateY(-5px);
+      }
+      nav{
+         background-color:white;
+         padding:10px;
+         text-align:right;
+         color:blue;
+      }
+      .card{
+    background-color: lightblue;
+    padding:2px;
+    margin-top:20px;
+    border-radius:15px;
+    box-shadow:0 0 15px lightgray;
+    transition:0.3s;
+    color: red;
+
+      }
+      .card:hover{
+    transform:translateY(-5px);
+      }
+
+</style>
